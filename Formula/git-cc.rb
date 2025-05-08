@@ -5,7 +5,7 @@
 class GitCc < Formula
   desc "git subcommand for generating conventional commits compliant commit messages"
   homepage "https://github.com/45413/git-cc"
-  version "1.1.2"
+  version "1.2.0"
   license "MIT"
 
   depends_on "git"
@@ -13,8 +13,8 @@ class GitCc < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/45413/git-cc/releases/download/v1.1.2/git-cc_Darwin_arm64.tar.gz"
-      sha256 "2f24238a1e359cd31dcb7b97d914e2fe5506c9be7d3e02ad028bc517e89556fe"
+      url "https://github.com/45413/git-cc/releases/download/v1.2.0/git-cc_Darwin_arm64.tar.gz"
+      sha256 "f432d344124a7b694413d8747c256c6ac8dadd648919da3ff2a8e29cab783364"
 
       def install
         bin.install "git-cc"
@@ -22,8 +22,8 @@ class GitCc < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/45413/git-cc/releases/download/v1.1.2/git-cc_Darwin_x86_64.tar.gz"
-      sha256 "15d51f89de0db94bc7d9617aa236f468fa05fa4f647fcd6f68c6b095f9ce81a0"
+      url "https://github.com/45413/git-cc/releases/download/v1.2.0/git-cc_Darwin_x86_64.tar.gz"
+      sha256 "b27fafb4d8c191422b0dd0a8bb6f804b7f46453b2192561c0daa4a0aa21eb1ca"
 
       def install
         bin.install "git-cc"
@@ -34,8 +34,8 @@ class GitCc < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/45413/git-cc/releases/download/v1.1.2/git-cc_Linux_arm64.tar.gz"
-      sha256 "ce3ccdc568a0fbb4f44e8583320e311034229cfc72eda6e50358e7b7b662e5ea"
+      url "https://github.com/45413/git-cc/releases/download/v1.2.0/git-cc_Linux_arm64.tar.gz"
+      sha256 "deea30a04c9df7172ba493967ae167427e44b93708933eb07cb37e459b0fe0d1"
 
       def install
         bin.install "git-cc"
@@ -43,8 +43,8 @@ class GitCc < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/45413/git-cc/releases/download/v1.1.2/git-cc_Linux_x86_64.tar.gz"
-      sha256 "abb4a779e1218b7bf31de9880718025f7e30b51fe1b4eb56dd6922d506d9ac84"
+      url "https://github.com/45413/git-cc/releases/download/v1.2.0/git-cc_Linux_x86_64.tar.gz"
+      sha256 "b059b17b00f5a6d266fb6308dbc972e3fcb318aeed98e6a84e7cf2dc39809d37"
 
       def install
         bin.install "git-cc"
